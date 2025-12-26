@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Users</title>
+  <link rel="stylesheet" href="../Css/users.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Manage Users</h1>
+    <a href="admin.html">
+      <button class="btn-submit">Back</button>
+    </a>
+  </header>
+
+  <section class="users-section">
+    <table>
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Ramesh</td>
+          <td>Artisan</td>
+          <td>Pending</td>
+          <td>
+            <button onclick="approve(this)">Approve</button>
+            <button onclick="removeUser(this)">Remove</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Anita</td>
+          <td>Customer</td>
+          <td>Pending</td>
+          <td>
+            <button onclick="approve(this)">Approve</button>
+            <button onclick="removeUser(this)">Remove</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Suresh</td>
+          <td>Artisan</td>
+          <td>Pending</td>
+          <td>
+            <button onclick="approve(this)">Approve</button>
+            <button onclick="removeUser(this)">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 TribalCrafts Connect</p>
+  </footer>
+
+  <script src="../JSfiles/users.js"></script>
+</body>
+</html>

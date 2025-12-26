@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Product Listing</title>
+  <link rel="stylesheet" href="../Css/add-product.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Create Product Listing</h1>
+    <a href="artisan.html">
+      <button class="btn-submit">Back to Dashboard</button>
+    </a>
+  </header>
+
+  <section class="form-section">
+    <form class="product-form">
+      <h2>Add New Product</h2>
+
+      <label>Product Name</label>
+      <input type="text" placeholder="Enter product name" required />
+
+      <label>Category</label>
+      <select required>
+        <option value="">Select category</option>
+        <option>Handicrafts</option>
+        <option>Jewellery</option>
+        <option>Textiles</option>
+        <option>Paintings</option>
+      </select>
+
+      <label>Price (₹)</label>
+      <input type="number" placeholder="Enter price" required />
+
+      <label>Description</label>
+      <textarea rows="4" placeholder="Product description"></textarea>
+
+      <label>Upload Image</label>
+      <input type="file" />
+
+      <button type="submit" class="btn-secondary">Submit Product</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 TribalCrafts Connect</p>
+  </footer>
+
+</body>
+</html>

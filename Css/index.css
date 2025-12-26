@@ -1,0 +1,199 @@
+:root {
+  --primary: #00695c;
+  --accent: #ffb300;
+  --bg: #f3f7f6;
+  --text: #222;
+}
+
+body {
+  width:100%;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.3rem 1.2rem;   
+  height: 50px;            
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar h1 {
+  font-size: 2rem;      
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: auto;
+
+}
+
+nav a button {
+  font-size: 0.85rem;
+  padding: 5px 14px;       
+  border-radius: 40px;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #00bfa6, #00796b);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 191, 166, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #00e6cc, #00897b);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 191, 166, 0.6);
+}
+.btn-primary{
+  background: linear-gradient(135deg, #00bfa6, #00796b);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 191, 166, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary:hover{
+    background: linear-gradient(135deg, #00e6cc, #00897b);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 191, 166, 0.6);
+}
+footer{
+    text-align:center;
+    height:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background:  #182024;
+    color:white;
+    
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(120deg, #004d40, #00897b);
+  color: white;
+}
+
+.btn {
+  background: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffd54f;
+}
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
+    url('../images/nature_greenery_waterfall_hd_nature-1920x1080.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.hero h2, .hero p {
+  animation: fadeIn 1s ease forwards;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

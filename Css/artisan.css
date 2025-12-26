@@ -1,0 +1,105 @@
+:root {
+  --primary: #8d6e63;
+  --accent: #ffb74d;
+  --bg: #fbe9e7;
+  --text: #3e2723;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.dashboard {
+  text-align: center;
+  padding: 3rem;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+.btn-submit {
+  background: linear-gradient(135deg, #00bfa6, #00796b);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 191, 166, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #00e6cc, #00897b);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 191, 166, 0.6);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+.btn-secondary{
+  background: linear-gradient(135deg, #00bfa6, #00796b);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 191, 166, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-secondary:hover{
+    background: linear-gradient(135deg, #00e6cc, #00897b);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 191, 166, 0.6);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+footer{
+    text-align:center;
+    height:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background:  #182024;
+    color:white;
+    
+}
